@@ -1,6 +1,7 @@
 #include "dynarr.h"
 #include <stdlib.h>
 #include <string.h>
+#include <stdbool.h>
 
 DynArr* DA_construct(int *arr, long size) {
 	DynArr* ret = malloc(sizeof(DynArr));

@@ -1,6 +1,31 @@
 #ifndef DYNARR_H
 #define DYNARR_H
 
+enum Types {
+	BOOL,
+	CHAR,
+	CHAR_SIGNED,
+	CHAR_UNSIGNED,
+	INT_SHORT,
+	INT_SHORT_SIGNED,
+	INT_SHORT_UNSIGNED,
+	INT,
+	INT_SIGNED,
+	INT_UNSIGNED,
+	INT_LONG,
+	INT_LONG_SIGNED,
+	INT_LONG_UNSIGNED,
+	INT_LONG_LONG,
+	INT_LONG_LONG_SIGNED,
+	INT_LONG_LONG_UNSIGNED,
+	FLOAT,
+	DOUBLE,
+	DOUBLE_LONG
+};
+
+typedef enum Types DA_types;
+
+
 typedef struct {
 	int *data;
 	long size;
